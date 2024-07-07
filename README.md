@@ -43,9 +43,10 @@ train
 ```
 sh train.sh
 ```
+
 an simply run with the script file.
 ```
-sh inference.sh
+sh tesh.sh
 ```
 
 Run the following command:
