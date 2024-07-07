@@ -5,7 +5,8 @@
 
 This is the unofficial train code of IDM-VTON ["Improving Diffusion Models for Authentic Virtual Try-on in the Wild"](https://arxiv.org/abs/2403.05139).
 
-
+## train result
+![image](data/data.png)
 ## Requirements
 
 ```
