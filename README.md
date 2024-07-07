@@ -4,6 +4,7 @@
 </div>
 
 This is the unofficial train code of IDM-VTON ["Improving Diffusion Models for Authentic Virtual Try-on in the Wild"](https://arxiv.org/abs/2403.05139).
+Most code from [IDM-VTON] https://github.com/yisol/IDM-VTON, only realize the train code for viton dataset
 
 ## train result
 ![image](data/data.png)
@@ -56,6 +57,7 @@ python gradio_demo/app.py
 
 ## Acknowledgements
 
+Thanks [IDM-VTION] https://github.com/yisol/IDM-VTON for most codes
 Thanks [ZeroGPU](https://huggingface.co/zero-gpu-explorers) for providing free GPU.
 
 Thanks [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) for base codes.
