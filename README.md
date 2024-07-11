@@ -11,7 +11,7 @@ Most code from [IDM-VTON] https://github.com/yisol/IDM-VTON, only realize the tr
 ## Requirements
 
 ```
-git clone https://github.com/yisol/IDM-VTON.git
+git clone https://github.com/luxiaolili/IDM-VTON-train/tree/main
 cd IDM-VTON
 
 conda env create -f environment.yaml
@@ -19,6 +19,15 @@ conda activate idm
 ```
 
 ## Data preparation
+
+## get the cloth mask and agnostic-v3.3 
+```
+python get_mask.py ../zalando-hd-resized/train/image  image_mask agnostic-v3.3
+```
+
+### Chang the config
+stable-diffusion-xl-1.0-inpainting-0.1 unet config update "encoder_hid_dim_type":"ip_image_proj", "encoder_hid_dim':1280
+stabilityai/stable-diffusion-xl-base-1.0 unet config  delete "addition_embed_type":"text_time"
 
 ### VITON-HD
 You can download VITON-HD dataset from [VITON-HD](https://github.com/shadow2496/VITON-HD).
@@ -32,9 +41,9 @@ Structure of the Dataset directory should be as follows.
 train
 |-- image
 |-- image-densepose
-|-- agnostic-mask
+|-- agnostic-v3.3
 |-- cloth
-|-- mask
+|-- img_mask
 ```
 
 
@@ -82,7 +91,8 @@ python gradio_demo/app.py
 
 ## Acknowledgements
 
-Thanks [IDM-VTION] https://github.com/yisol/IDM-VTON for most codes
+Thanks [IDM-VTION] https://github.com/yisol/IDM-VTON for most codes.
+
 Thanks [ZeroGPU](https://huggingface.co/zero-gpu-explorers) for providing free GPU.
 
 Thanks [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) for base codes.
