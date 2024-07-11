@@ -27,6 +27,7 @@ python get_mask.py ../zalando-hd-resized/train/image  image_mask agnostic-v3.3
 
 ### Chang the config
 stable-diffusion-xl-1.0-inpainting-0.1 unet config update "encoder_hid_dim_type":"ip_image_proj", "encoder_hid_dim':1280
+
 stabilityai/stable-diffusion-xl-base-1.0 unet config  delete "addition_embed_type":"text_time"
 
 ### VITON-HD
