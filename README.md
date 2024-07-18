@@ -26,6 +26,11 @@ python get_mask.py ../zalando-hd-resized/train/image  image_mask agnostic-v3.3
 ```
 
 ### Chang the config
+
+You can download idm model from https://huggingface.co/yisol/IDM-VTON/ for denspose, humanparsering, openpose, image_encoder, text_encoder
+
+You can download vae model from https://huggingface.co/madebyollin/sdxl-vae-fp16-fix 
+
 You need download sdxl-1.0 model from https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 
 download sdxl-1.0-inpainting model from https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1
