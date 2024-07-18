@@ -78,8 +78,14 @@ CUDA_VISIBLE_DEVICES=1  accelerate launch --num_processes 1 --mixed_precision "f
   ```
 
 ## Test
-put the train model in the idm folder and simply run with the script file.
+put the train model in the idm folder and simply run with the script file. 
+
 ```
+cd checkpoint-50000 
+mv pytorch_model.bin diffusion_pytorch_model.bin
+mkdir unet
+mv * unet
+cp ../stable-diffusion-xl-1.0-inpainting-0.1/unet/config.json unet
 sh tesh.sh
 ```
 or Run the following command:
