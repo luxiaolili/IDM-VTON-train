@@ -48,7 +48,6 @@ from src.tryon_pipeline import StableDiffusionXLInpaintPipeline as TryonPipeline
 
 from vitonhd_dataset import VitonHDDataset
 import time
-from tutorial_train_plus_sdxl_small import IPAdapter
 from ip_adapter.utils import is_torch2_available
 if is_torch2_available():
     from ip_adapter.attention_processor import IPAttnProcessor2_0 as IPAttnProcessor, AttnProcessor2_0 as AttnProcessor

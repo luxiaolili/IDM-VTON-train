@@ -19,7 +19,7 @@ dependencies:
       - transformers==4.36.2
       - diffusers==0.25.0
       - einops==0.7.0
-      - bitsandbytes==0.39.0
+      - bitsandbytes==0.42.0
       - scipy==1.11.1
       - opencv-python
       - gradio==4.24.0
