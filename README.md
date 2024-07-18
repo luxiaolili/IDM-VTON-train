@@ -20,8 +20,7 @@ conda activate idm
 
 ## Data preparation
 
-## get the cloth mask and agnostic-v3.3
-## put the image_mask and agnostic-v3.3 to train and test folder
+get the cloth mask and agnostic-v3.3 and put the image_mask and agnostic-v3.3 to train and test folder
 ```
 python get_mask.py ../zalando-hd-resized/train/image  image_mask agnostic-v3.3
 
