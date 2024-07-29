@@ -245,7 +245,7 @@ def main():
         low_cpu_mem_usage=False, 
         ignore_mismatched_sizes=True
     )
-    pretrain = os.path.join(args.pretrained_model_name_or_path, 'unet')
+    pretrain = os.path.join(args.inpainting_model_path, 'unet')
     load_model_with_zeroed_mismatched_keys(unet, os.path.join(pretrain, 'diffusion_pytorch_model.safetensors'))
     if unet.conv_in.in_channels == 9:
         logger.info("Initializing the Inpainting UNet from the pretrained 9 channel UNet .")
