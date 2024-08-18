@@ -442,6 +442,7 @@ def main():
                     latents = compute_vae_encodings(init_image, vae)
                     cloth_latents = compute_vae_encodings(sample['cloth_pure'], vae)
                     pose_latents = compute_vae_encodings(sample['denspose'], vae)
+                    mask_image_latents = compute_vae_encodings(sample['agno'],vae)
                     
                     mask = F.interpolate(sample['mask'].to(torch.float32), size=(int(args.height/8), int(args.width/8)))
                     mask = mask.to(accelerator.device, dtype=torch.float16)
