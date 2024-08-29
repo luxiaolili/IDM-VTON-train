@@ -1,7 +1,7 @@
 from preprocess.humanparsing.run_parsing import Parsing
 from preprocess.openpose.run_openpose import OpenPose
 from PIL import Image 
-from util_mask import get_mask_location
+from gradio_demo.util_mask import get_mask_location
 import torch 
 import numpy as np
 from torchvision import transforms
